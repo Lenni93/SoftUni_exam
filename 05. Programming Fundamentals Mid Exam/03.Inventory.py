@@ -10,7 +10,7 @@ while command[0] != 'Craft!':
     elif action == "Drop":
         if item in inventory:
             inventory.remove(item)
-    elif action == "Combine items":
+    elif action == "Combine Items":
         old_item, new_item = item.split(":")
         if old_item in inventory:
             old_item_index = inventory.index(old_item)
@@ -19,7 +19,6 @@ while command[0] != 'Craft!':
         if item in inventory:
             inventory.remove(item)
             inventory.append(item)
-command = input().split(" - ")
+    command = input().split(" - ")
 print(", ".join(inventory))
 
-# print(*inventory, sep=", ")
